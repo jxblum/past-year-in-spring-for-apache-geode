@@ -18,8 +18,10 @@ package example.app.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.gemfire.mapping.annotation.Region;
 
+import lombok.AccessLevel;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
@@ -37,12 +39,13 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString(of = "name")
 @RequiredArgsConstructor(staticName = "newUser")
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class User {
 
 	@NonNull @Id
-	private final Long id;
+	private Long id;
 
 	@NonNull
-	private final String name;
+	private String name;
 
 }
