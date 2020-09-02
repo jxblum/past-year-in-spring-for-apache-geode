@@ -59,12 +59,16 @@ public class CacheInitializationIntegrationTests extends IntegrationTestsSupport
 	@Test
 	public void usersRegionsContainsDoeFamily() {
 
+		this.userRepository.save(User.newUser(6L, "Fro Doe"));
+		this.userRepository.save(User.newUser(4L, "Lan Doe"));
+
 		assertThat(this.userRepository.findAll()).containsExactlyInAnyOrder(
 			User.newUser(1L, "Jon Doe"),
 			User.newUser(2L, "Jane Doe"),
 			User.newUser(3L, "Cookie Doe"),
-			User.newUser(4L, "Pie Doe"),
-			User.newUser(5L, "Sour Doe")
+			User.newUser(4L, "Lan Doe"),
+			User.newUser(5L, "Sour Doe"),
+			User.newUser(6L, "Fro Doe")
 		);
 	}
 
