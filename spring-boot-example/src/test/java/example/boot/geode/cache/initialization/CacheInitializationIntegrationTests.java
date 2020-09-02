@@ -46,8 +46,8 @@ import example.app.repo.UserRepository;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = CacheInitializationIntegrationTests.SpringGeodeConfiguration.class,
 	properties = {
-		"spring.boot.data.gemfire.cache.data.export.enabled=true",
-		"spring.boot.data.gemfire.cache.data.export.resource.location=file://#{#env['user.home']}/pivdev/springone-2020/past-year-in-spring-for-apache-geode/spring-boot-example/tmp/my-#{#regionName}.json"
+		//"spring.boot.data.gemfire.cache.data.export.enabled=true",
+		//"spring.boot.data.gemfire.cache.data.export.resource.location=file://#{#env['user.home']}/pivdev/springone-2020/past-year-in-spring-for-apache-geode/spring-boot-example/tmp/my-#{#regionName}.json"
 	}
 )
 @SuppressWarnings("unused")
