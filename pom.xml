@@ -90,7 +90,7 @@
 		<dependency>
 			<groupId>io.springone.2020</groupId>
 			<artifactId>spring-geode-core</artifactId>
-			<version>${version}</version>
+			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
