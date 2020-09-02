@@ -1,0 +1,27 @@
+[
+  {
+    "@type": "example.app.model.User",
+    "id": 1,
+    "name": "Jon Doe"
+  },
+  {
+    "@type": "example.app.model.User",
+    "id": 2,
+    "name": "Jane Doe"
+  },
+  {
+    "@type": "example.app.model.User",
+    "id": 3,
+    "name": "Cookie Doe"
+  },
+  {
+    "@type": "example.app.model.User",
+    "id": 4,
+    "name": "Pie Doe"
+  },
+  {
+    "@type": "example.app.model.User",
+    "id": 5,
+    "name": "Sour Doe"
+  }
+]
