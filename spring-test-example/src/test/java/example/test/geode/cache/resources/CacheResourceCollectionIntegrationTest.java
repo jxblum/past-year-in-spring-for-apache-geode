@@ -57,6 +57,7 @@ import example.app.repo.UserRepository;
  * @see org.springframework.data.gemfire.tests.integration.IntegrationTestsSupport
  * @see org.springframework.data.gemfire.tests.integration.annotation.EnableGemFireResourceCollector
  * @see org.springframework.test.context.junit4.SpringRunner
+ * <a href="https://github.com/spring-projects/spring-test-data-geode#stdg-in-a-nutshell">STDG reference documentation</a>
  * @since 1.0.0
  */
 @RunWith(SpringRunner.class)
